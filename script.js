@@ -1,5 +1,11 @@
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
+const content_strings = {
+  sacred_grove: [
+    "The Sacred Grove",
+    " is one of the most famous locations of the Restoration. This is where Joseph Smith had the First Vision",
+  ],
+};
 
 function initMap() {
   const sacred_grove = { lat: 43.04067395742267, lng: -77.24432780452317 };
@@ -14,7 +20,9 @@ function initMap() {
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">The Sacred Grove</h1>' +
+    '<h1 id="firstHeading" class="firstHeading">' +
+    content_strings.sacred_grove[0] +
+    "</h1>" +
     '<div id="bodyContent">' +
     "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
     "sandstone rock formation in the southern part of the " +
@@ -52,7 +60,7 @@ function initMap() {
 
   const infowindow2 = new google.maps.InfoWindow({
     content: sacredGroveString,
-    ariaLabel: "The Sacred Grove",
+    ariaLabel: "Harmony",
   });
 
   const marker2 = new google.maps.Marker({
