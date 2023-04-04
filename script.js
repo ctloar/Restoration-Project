@@ -1,5 +1,14 @@
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
+
+// LOCATIONS:
+// Kirtland
+// Nauvoo
+// Jackson County
+// Palmyra
+// Harmony
+// Salt Lake City
+
 const content_strings = {
   sacred_grove: [
     "The Sacred Grove",
